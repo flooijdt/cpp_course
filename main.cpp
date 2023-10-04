@@ -12,13 +12,14 @@ int main(int argc, char *argv[])
 
     int total_lenght = 0;
     
+    int lenght = 0;
+
     do {
-        int lenght = 0;
         std::cout << "\nwhat is the wall lenght?: ";
         std::cin >> lenght;
 
-        total_lenght = ++lenght;
-    }while (total_lenght > 0);
+        total_lenght += lenght;
+    }while (lenght > 0);
 
     std::cout << "\nthe total area is " << height * total_lenght << "\n";
 
