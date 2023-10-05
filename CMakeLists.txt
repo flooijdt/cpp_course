@@ -14,6 +14,8 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
 
 add_executable(untitled
   main.cpp
+  animal.h
+  animal.cpp
 )
 target_link_libraries(untitled Qt${QT_VERSION_MAJOR}::Core)
 
